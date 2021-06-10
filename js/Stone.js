@@ -15,7 +15,7 @@ class Stone {
 	    
 	World.add(world, this.body); } 
     }
-    display() {
+    display() 
 		var stoneSpot=this.body.position;	
 		push()
 		translate(stoneSpot.x, stoneSpot.y);
@@ -24,7 +24,6 @@ class Stone {
 	    	ellipseMode(RADIUS);
 	    	image(this.image, 0,0,this.r*2, this.r*2);
 		pop()
-    }
     }
 }
 
