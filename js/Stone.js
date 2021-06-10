@@ -13,9 +13,9 @@ class Stone {
         this.image = loadImage("images/stone.png");
         this.body = Bodies.rectangle(this.x, this.y, this.r/2, options);
 	    
-	World.add(world, this.body); } 
+	World.add(world, this.body);  
     }
-    display() 
+    display() {
 		var stoneSpot=this.body.position;	
 		push()
 		translate(stoneSpot.x, stoneSpot.y);
