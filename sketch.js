@@ -133,7 +133,7 @@ function detectcollision(stone, mango) {
 	stonebodypos = stone.body.position;
 
 	var distance = dist(stonebodypos.x, stonebodypos.y, mangobodypos.x, mangobodypos.y);
-	if (distance<=mango.r+stone.width){
+	if (distance<=mango.r+stone.r){
 		Body.setStatic(mango.body,false);
 	}
 }
